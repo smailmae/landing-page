@@ -2,72 +2,184 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<title>Private Experience</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Step Into a Private Adults-Only World</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+
 <style>
-  /* Reset and base styles */
-  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
-  body { background: #0e0e0e; color: #fff; text-align: center; line-height: 1.6; }
-  a { text-decoration: none; color: inherit; }
+body {
+    margin: 0;
+    font-family: 'Orbitron', sans-serif;
+    background: #0b0b0f;
+    color: #ffffff;
+}
 
-  /* Container */
-  .container { max-width: 800px; margin: 0 auto; padding: 20px; }
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(5,5,10,0.85), rgba(5,5,10,0.95)),
+    url("assets/images/pexels-designecologist-887349.jpg") center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px;
+}
 
-  /* Headline */
-  h1 { font-size: 2.2rem; color: #ff4081; margin-bottom: 20px; }
+.hero-content {
+    max-width: 800px;
+}
 
-  /* Description text */
-  .description { font-size: 1.1rem; margin-bottom: 30px; }
-  .description p { margin: 15px 0; }
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    color: #00f7ff;
+}
 
-  /* Image */
-  .hero-img { width: 100%; max-width: 400px; border-radius: 15px; margin-bottom: 30px; }
+.hero p {
+    font-size: 1.2rem;
+    color: #ccc;
+    line-height: 1.6;
+}
 
-  /* CTA Button */
-  .cta-button {
-    background: linear-gradient(90deg, #ff4081, #ff79c6);
-    color: #fff;
-    font-size: 1.3rem;
-    padding: 15px 30px;
-    border-radius: 50px;
+.btn-main {
     display: inline-block;
+    margin-top: 30px;
+    padding: 15px 40px;
+    background: #00f7ff;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-radius: 30px;
     transition: 0.3s;
-  }
-  .cta-button:hover { transform: scale(1.05); background: linear-gradient(90deg, #ff79c6, #ff4081); }
+}
 
-  /* Age warning */
-  .age-warning { margin-top: 25px; font-size: 0.9rem; color: #ff5555; }
+.btn-main:hover {
+    background: #0ff;
+    transform: scale(1.05);
+}
 
-  /* Responsive */
-  @media (max-width: 600px) {
-    h1 { font-size: 1.8rem; }
-    .description { font-size: 1rem; }
-    .cta-button { font-size: 1.1rem; padding: 12px 25px; }
-  }
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5rem;
+    color: #00f7ff;
+    margin-bottom: 50px;
+}
+
+.experiences {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #12121a;
+    border-radius: 20px;
+    padding: 40px 30px;
+    max-width: 350px;
+    box-shadow: 0 0 20px rgba(0,247,255,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 30px rgba(0,247,255,0.3);
+}
+
+.card h3 {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.card p {
+    color: #aaa;
+    line-height: 1.6;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 12px 30px;
+    background: transparent;
+    border: 2px solid #00f7ff;
+    color: #00f7ff;
+    text-decoration: none;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+
+.card a:hover {
+    background: #00f7ff;
+    color: #000;
+}
+
+.trust {
+    margin-top: 60px;
+    color: #777;
+    font-size: 0.95rem;
+}
+
+.trust span {
+    display: inline-block;
+    margin: 10px 15px;
+}
 </style>
 </head>
+
 <body>
 
-<div class="container">
-  <!-- Headline -->
-  <h1>Step Into a Private Adults-Only World</h1>
+<div class="hero">
+    <div class="hero-content">
+        <h1>A New Way to Experience Adult Connections</h1>
+        <p>
+            Step into a private digital world designed for adults who want something more real,
+            more exciting, and more discreet than public platforms.
+        </p>
+        <a href="#choose" class="btn-main">Enter the Experience</a>
+    </div>
+</div>
 
-  <!-- Hero Image -->
-  <img src="https://i.imgur.com/Q7AYWcL.png" alt="Attractive Woman" class="hero-img">
+<div class="section" id="choose">
+    <h2>Choose Your Experience</h2>
 
-  <!-- Description -->
-  <div class="description">
-    <p>🔥 Enjoy an Adults-Only Private World (18+)</p>
-    <p>🌙 Discover a unique and bold experience on Xcams, where you can enjoy live chat and private adventures away from any public restrictions.</p>
-    <p>💡 A completely different experience from any other site, with full privacy and total freedom to interact.</p>
-    <p>⚠️ This experience is for adults only. Please ensure you are 18+ before participating.</p>
-  </div>
+    <div class="experiences">
 
-  <!-- Call to Action Button -->
-  <a href="https://t.acrsmartcam.com/399431/6973?bo=2779,2778,2777,2776,2775&aff_sub5=SF_006OG000004lmDN" class="cta-button">Start Your Private Experience</a>
+        <div class="card">
+            <h3>Live Interaction Experience</h3>
+            <p>
+                Designed for people who enjoy fast-paced, real-time moments
+                in a private digital environment.
+            </p>
+            <a href="https://t.acrsmartcam.com/399431/6973?bo=2779,2778,2777,2776,2775&aff_sub5=SF_006OG000004lmDN" target="_blank">
+                Continue
+            </a>
+        </div>
 
-  <!-- Age Warning -->
-  <div class="age-warning">18+ Adults Only</div>
+        <div class="card">
+            <h3>Modern Social Experience</h3>
+            <p>
+                A next-generation platform for adults who want something more modern,
+                smoother, and more immersive.
+            </p>
+            <a href="https://t.acrsmartcam.com/399431/7984?bo=2779,2778,2777,2776,2775&aff_sub5=SF_006OG000004lmDN" target="_blank">
+                Explore
+            </a>
+        </div>
+
+    </div>
+
+    <div class="trust">
+        <span>Adults Only</span>
+        <span>Private Environment</span>
+        <span>No Fake Profiles</span>
+        <span>Discreet Access</span>
+        <span>Secure Platform</span>
+    </div>
 </div>
 
 </body>
